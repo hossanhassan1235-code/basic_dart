@@ -1,0 +1,16 @@
+import 'dart:io';
+
+void main() {
+  int input = int.parse(stdin.readLineSync()!);
+  int counter = 0;
+  for (int i = 1; i <= input; i++) {
+    if (input % i == 2) {
+      counter++;
+    }
+  }
+  if (counter == 2) {
+    print("prime number");
+  } else {
+    print("not prime number");
+  }
+}
